@@ -1,20 +1,73 @@
  code below
 function buildPath(p,n){
 let path = p;
+
  let n =0;
+
 let i =0;
+
 let r= Math.Random
+
 for(var n=0; i<n; n++;){
+
 if(r>=p)
+
 return false
+
 else if (true)
 }
+
 path[]
+
 return path;
 }
 
 
-function stroll(p,cl)
+function stroll(path,index){
+
+  if(index == path.length){
+
+    return 1;
+
+  }
+
+  else if(index > path.length){
+
+    return 0;
+
+  }
+
+  else{
+
+    return stroll(path,index+1);
+
+  }
+
+}
+
+
+
+function rsj(path,index){
+
+  if(index == path.length-1){
+
+    return 1;
+
+  }
+
+  else if(index > path.length-1){
+
+    return 0;
+
+  }
+
+  else{
+
+    return rsj(path,index+1) + rsj(path,index+2) + rsj(path,index+5);
+
+  }
+
+}
 
 
 
